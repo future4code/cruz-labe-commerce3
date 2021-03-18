@@ -1,41 +1,40 @@
-import React, { Component } from 'react';
+import React from 'react'
 import './App.css';
 import styled from 'styled-components'
+import Filtro from './components/Filtro'
+import Produtos from './components/Produtos'
+import Carrinho from './components/Carrinho'
 
 
-const CorpoDoSite = styled.div`
+const corpoDoSite = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   padding: 16px
   gap: 8px;
+  height: 100 vh;
 `
-const CabecalhoTeste = styled.div`
-  background-color: red;
-  display: flex;
-  box-align: center;
-  align-items: center;
-  box-pack: justify;
-  justify-content: space-between;
-  padding: opx 16px
-  
+const filtro = styled.div`
+  border: 1px solid black;
+
 `
+const produtos = styled.div`
+  border: 1px solid red;
+
+`
+const carrinho = styled.div`
+  border: 1px solid blue;
+
+`
+
 function App() {
   return (
-    <CorpoDoSite>
-        <CabecalhoTeste>
-          <p>Quantidade de prodytos</p>
+  
 
-          <label>Ordenação:
-            <select>
-              <option value="Crescente">Crescente</option>
-              <option value="Decrescente">Decrescente</option>
-            </select>
+    <div>
+      <p>oi</p>
+    </div>
 
-          </label>
-
-
-        </CabecalhoTeste>
-    </CorpoDoSite>
+    
   );
 }
 
