@@ -1,4 +1,4 @@
-# cruz-whatslab19
+# cruz-labe-commerce
 
 
 <h3>TABELA DE CONTEÚDOS
@@ -33,7 +33,7 @@ As seguintes tecnologias foram utilizadas no projeto:
 
 ### Contribuição
 
-Este projeto contou com a contribuição da Dupla *Eduardo Silva* e *Igor Meira do Nascimento Silva*
+Este projeto contou com a contribuição de *Eduardo Silva* e *Igor Meira do Nascimento Silva*
 
 ### Autores
 
