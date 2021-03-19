@@ -26,17 +26,25 @@ const DivCarrinho = styled.div`
 `
 
 function App() {
-  //const [produtos, setProdutos] = useState();
+
   const [carrinho, setCarrinho] = useState([]);
-  
+  //const [produtos, setProdutos] = useState([]);
+
+  const getProdutos = (get) => {
+    return get;
+  }
+ 
+  const addFiltro = (filtros) => {
+    
+    console.log(getProdutos());
+  }
+
   const addItemCarrrinho = (produto) => {
 
     for(let item = 0; item < carrinho.length; item++){
       if(carrinho[item].produto.id === produto.id){
-          const qtd = carrinho[item].qtd = carrinho[item].qtd + 1;
-          //setCarrinho([carrinho[item].qtd = qtd])
-          console.log(qtd);
-          console.log(carrinho);
+          carrinho[item].qtd = carrinho[item].qtd + 1;
+          setCarrinho([...carrinho]);
           return null;
       }
     }
@@ -44,25 +52,34 @@ function App() {
       produto: produto,
       qtd: 1,
     }
-    console.log(novoProduto);
+
     setCarrinho([...carrinho, novoProduto]);
-    console.log(carrinho);
   }
 
-  const addProduto = () => {
-
+  const removerItem = (key) => {
+    if(carrinho[key].qtd > 1) {
+      carrinho[key].qtd = carrinho[key].qtd - 1
+      setCarrinho([...carrinho]);
+    } else{
+      const atualizado = carrinho.filter((item) => {
+        carrinho[key].qtd = 0
+        return item.qtd !== 0;
+      })
+      setCarrinho(atualizado);
+      console.log(atualizado);
+    }
   }
-
+  addFiltro();
   return (
     <DivContainer>
       <DivFiltro> 
-        <Filtro />
+        <Filtro addFiltro={addFiltro} />
       </DivFiltro>
       <DivProdutos>
-        <Produtos addItemCarrrinho={addItemCarrrinho} />
+        <Produtos addItemCarrrinho={addItemCarrrinho} getProdutos={getProdutos} />
       </DivProdutos>
       <DivCarrinho>
-        <Carrinho getCarrinho={carrinho} />
+        <Carrinho getCarrinho={carrinho} remover={removerItem} />
       </DivCarrinho>
     </DivContainer>
   );
