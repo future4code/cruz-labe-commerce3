@@ -7,7 +7,7 @@
   <a href="#Pré-Requisitos">Pré-Requisitos</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#contribuicao">Contribuição</a> • 
- <a href="#autor">Autor</a> 
+ <a href="#autores">Autores</a> 
 </p>
   
 <h4>PROJETO EM ANDAMENTO</h4>
