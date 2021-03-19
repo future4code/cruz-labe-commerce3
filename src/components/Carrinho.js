@@ -15,7 +15,7 @@ const Carrinho = (props) => {
 
     const imprimir = carrinho.map((item, index) => {
         //setProdutos([...produto, item]);
-        return <ImprimirNoCarrinho item={item.produto} qtd={item.qtd} key={index} />
+        return <ImprimirNoCarrinho item={item.produto} qtd={item.qtd} key={index} remover={() => props.remover(index)} />
     })
 
     return (

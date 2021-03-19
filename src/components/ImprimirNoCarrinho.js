@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useEffect } from 'react'
 
 const DivContainer = styled.div`
     display: flex;
@@ -17,7 +18,7 @@ const ImprimirNoCarrinho = (props) => {
         <DivContainer>
             <span>{props.qtd}</span>
             <span>{item.name}</span>
-            <button>Remover</button>
+            <button onClick={props.remover}>Remover</button>
         </DivContainer>
     )
 }

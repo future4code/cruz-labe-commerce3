@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import ImprimirProduto from './ImprimirProduto';
 
@@ -48,11 +48,13 @@ const Produtos = (props) => {
             }
         ]
     );
-    
+
+    props.getProdutos(produtos);
+
     return (
         <DivContainer>
             {produtos.map((produto, index) => {
-                return <ImprimirProduto add={props.addItemCarrrinho} produtos={produto} key={index}/>
+                return <ImprimirProduto add={props.addItemCarrrinho} produtos={produto} key={index} />
             })}
         </DivContainer>
     )
