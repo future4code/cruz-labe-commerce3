@@ -86,3 +86,6 @@ function App() {
 }
 
 export default App;
+
+
+//projeto ainda não completo, outra parte está com o Eduardo
