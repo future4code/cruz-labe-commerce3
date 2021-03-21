@@ -12,17 +12,31 @@ const DivContainer = styled.div`
   padding: 16px
   gap: 8px;
   height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/29262.jpg) 
+  
 `
 const DivFiltro = styled.div`
-  border: 1px solid black;
+  border: 5px solid aqua;
+  border-style: groove;
+  margin: 5px;
+  height: 70%;
+  color: aqua;
 
 `
 const DivProdutos = styled.div`
-  border: 1px solid red;
+  border: 5px solid aqua;
+  border-style: groove;
+  margin: 5px;
+  color: aqua;
 
 `
 const DivCarrinho = styled.div`
-  border: 1px solid blue;
+  border: 5px solid aqua;
+  border-style: groove;
+  margin: 5px;
+  height: 70%;
+  color: aqua;
+
 `
 
 function App() {

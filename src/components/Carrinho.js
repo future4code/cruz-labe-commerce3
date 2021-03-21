@@ -19,7 +19,7 @@ const Carrinho = (props) => {
     })
 
     return (
-        <div>
+        <div align="center">
             <h1>Carrinho</h1>
             <div>
                 {imprimir}
