@@ -1,14 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useEffect } from 'react'
 
 const DivContainer = styled.div`
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
   }
-  & > span {
-      flex-grow:
-      border: 1px solid #444;
+  & .qtd {
+      margin-right: 15px;
+      color: orange;
+  }
+  & button {
+      background-color: #8A09C1;
+      border: 0;
+      align-self: flex-start;
+      padding: 8px;
   }
 `
 
@@ -16,7 +24,7 @@ const ImprimirNoCarrinho = (props) => {
     const item = props.item;
     return (
         <DivContainer>
-            <span>{props.qtd}</span>
+            <span className="qtd">{props.qtd}</span>
             <span>{item.name}</span>
             <button onClick={props.remover}>Remover</button>
         </DivContainer>
