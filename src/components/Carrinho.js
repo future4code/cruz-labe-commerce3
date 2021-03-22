@@ -22,6 +22,8 @@ const Carrinho = (props) => {
     return (
         <DivContainer>
             <h1 className="carrinho"><span>{props.total === 0 ? "" : props.total + " item(s) no"}</span>Carrinho</h1>
+        <div align="center">
+            <h1>Carrinho</h1>
             <div>
                 {imprimir}
             </div>

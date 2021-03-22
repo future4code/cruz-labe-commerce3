@@ -40,6 +40,34 @@ const DivSearch = styled.input`
   border-bottom: 2px solid #8A09C1;
   color: #999;
   font-size: 1em;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 16px
+  gap: 8px;
+  height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/29262.jpg) 
+  
+`
+const DivFiltro = styled.div`
+  border: 5px solid aqua;
+  border-style: groove;
+  margin: 5px;
+  height: 70%;
+  color: aqua;
+
+`
+const DivProdutos = styled.div`
+  border: 5px solid aqua;
+  border-style: groove;
+  margin: 5px;
+  color: aqua;
+
+`
+const DivCarrinho = styled.div`
+  border: 5px solid aqua;
+  border-style: groove;
+  margin: 5px;
+  height: 70%;
+  color: aqua;
 `
 
 function App() {
@@ -179,3 +207,6 @@ function App() {
 }
 
 export default App;
+
+
+//projeto ainda não completo, outra parte está com o Eduardo
