@@ -37,7 +37,7 @@ Este projeto contou com a contribuição de *Eduardo Silva* e *Igor Meira do Nas
 
 ### Link do Projeto
 - <a href="http://cruz-labe-commerce3.surge.sh/">Labe Commerce</a> 
-- 
+
 ### Autores
 
 *Eduardo Silva* e *Igor Meira do Nascimento Silva*
